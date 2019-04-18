@@ -48,7 +48,7 @@ environment ENV.fetch("RAILS_ENV") { "development" }
 # cannot share connections between processes.
 #
 # on_worker_boot do
-#   ActiveRecord::Base.establish_connection if defined?(ActiveRecord)
+ActiveRecord::Base.establish_connection if defined?(ActiveRecord)
 # end
 #
 
